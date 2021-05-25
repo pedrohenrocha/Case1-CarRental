@@ -1,0 +1,107 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+
+/*Layout ********************/
+
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    /*background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+                background-attachment: fixed;*/
+                font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin: 60px;
+}
+
+/*Barra de navegação *******************/
+
+nav.navbar {
+    padding: 15px 0px;
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+
+/*Barra de navegação *******************/
+/*
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(11, 122, 21);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}*/
+
+/* Form area *******************/
+
+#rent {
+    background-image: url('https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.form {
+    max-width: 50%;
+    margin: 80px auto;
+    padding: 20px;
+    border: rgb(58, 58, 58) solid 3px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.dates label {
+    margin-top: 10px;
+}
+
+/* Carousel fleet area ******************/
+
+#fleet {
+    background-color: rgba(141, 141, 141, 0.397);
+    padding-bottom: 50px;
+}
+
+/* Cards advantages **********/
+#advantage {
+    background-image: url(https://images.pexels.com/photos/248539/pexels-photo-248539.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    padding: 30px 70px;
+}
+
+.first {
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 20em;
+}
+
+

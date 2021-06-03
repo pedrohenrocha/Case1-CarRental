@@ -18,11 +18,10 @@ body {
                 font-family: Helvetica, Arial, sans-serif;
 }
 
-h1 {
-    margin: 60px;
-}
-
 /*Barra de navegação *******************/
+header nav {
+    background-color: rgba(0, 0, 0, 0.815);
+}
 
 nav.navbar {
     padding: 15px 0px;
@@ -34,7 +33,7 @@ nav.navbar {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #9bf0e1;
+    color: #919496;
 }
 
 
@@ -87,13 +86,21 @@ nav.navbar-transparente {
 
 #fleet {
     background-color: rgba(141, 141, 141, 0.397);
-    padding-bottom: 50px;
+    padding: 50px;
+}
+
+#carousel-indicadores {
+    max-width: fit-content;
+}
+
+#fleet .carousel-inner .img-fluid {
+    border-radius: 10px;
 }
 
 /* Cards advantages **********/
 #advantage {
     background-image: url(https://images.pexels.com/photos/248539/pexels-photo-248539.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    padding: 30px 70px;
+    padding: 50px;
 }
 
 .first {
@@ -102,6 +109,62 @@ nav.navbar-transparente {
 
 .card {
     max-width: 20em;
+    border: none;
 }
 
+.card-body {
+    background-color: rgba(216, 216, 216, 0.473);
+}
 
+.text-adv {
+    color: rgb(173, 173, 173);
+}
+
+/* Download our app***********/
+#download-app {
+    background-color: rgba(141, 141, 141, 0.397);
+    height: 480px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#follow {
+    margin-top: 20px;
+}
+
+#social-medias {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#social-medias li {
+    float: left;
+    margin: 0 5px;
+}
+
+/* Footer *************/
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 1em;
+}
+
+footer .navbar-nav a:hover {
+    color: #919496;
+    text-decoration: none;
+}

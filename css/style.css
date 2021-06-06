@@ -130,6 +130,10 @@ nav.navbar-transparente {
     justify-content: center;
 }
 
+#download {
+    margin: 40px auto;
+}
+
 #follow {
     margin-top: 20px;
 }

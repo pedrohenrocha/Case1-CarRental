@@ -1,6 +1,3 @@
-var pick_up_date = undefined
-var drop_off_date = undefined
-
 //validating the homepage's form 
 function validForm() {
     document.getElementById('location').setAttribute("class", 'form-control')
@@ -9,8 +6,8 @@ function validForm() {
 
     var city = document.getElementById('location').value
     console.log(city)
-    pick_up_date = document.getElementById('pu_date').value
-    drop_off_date = document.getElementById('do_date').value
+    var pick_up_date = document.getElementById('pu_date').value
+    var drop_off_date = document.getElementById('do_date').value
 
     var resultado = (pick_up_date <= drop_off_date) ? true : false
 
@@ -33,9 +30,15 @@ function validForm() {
 
     if (city != 0 && resultado === true) {
         window.open('rental_options.html')
-        document.addEventListener("DOMContentLoaded", function () {
-            var choose = document.getElementById('choose_car')
-            choose.innerHTML = "You're going to take the car in " + city + " for " + days + "days."
-        })
+        localStorage.setItem('_days', days);
+        localStorage.setItem('_city', city);    
     }
+}
+
+function changeTitle() {
+    var days = localStorage.getItem('_days')
+    var city = localStorage.getItem('_city')
+
+    var change = document.getElementById('choose_car')
+    change.innerHTML = "You're going to take the car in " + city + " for " + days + " days."
 }

@@ -69,8 +69,17 @@ nav.navbar-transparente {
     background-image: url('https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
-.form {
+.form-home {
     max-width: 50%;
+    margin: 80px auto;
+    padding: 20px;
+    border: rgb(58, 58, 58) solid 3px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.form-options {
+    max-width: 75%;
     margin: 80px auto;
     padding: 20px;
     border: rgb(58, 58, 58) solid 3px;
@@ -80,6 +89,15 @@ nav.navbar-transparente {
 
 .dates label {
     margin-top: 10px;
+}
+
+#contacts a {
+    text-decoration: none;
+    color: #000;
+}
+
+#contacts a:hover {
+    color: #919496;
 }
 
 /* Carousel fleet area ******************/
@@ -105,17 +123,27 @@ nav.navbar-transparente {
 
 .card-img-top {
     border-radius: 50%;
-    width: 300px;
+    width: 250px;
     margin: 50px auto 20px auto;
 }
 
 .card-title, .card-text {
     color: white;
     margin: auto;
+    text-align: center;
+}
+
+.card-text {
+    margin-top: 10px;
 }
 
 .text-adv {
     color: rgb(173, 173, 173);
+    text-align: center;
+}
+
+.below {
+    padding-top: 20px;
 }
 
 /* Download our app***********/
@@ -169,4 +197,24 @@ footer .navbar-nav a {
 footer .navbar-nav a:hover {
     color: #919496;
     text-decoration: none;
+}
+
+/****** Especial settings for each screen size ******/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .nav-item {
+        margin-left: 20px;
+    }
+
+    .card-img-top {
+        width: 200px;
+    }
+    
+    #download {
+        padding-bottom: 20px;
+    }
+
+    .signature {
+        margin-left: 5px;
+    }
 }

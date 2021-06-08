@@ -39,6 +39,20 @@ function changeTitle() {
     var days = localStorage.getItem('_days')
     var city = localStorage.getItem('_city')
 
-    var change = document.getElementById('choose_car')
+    var change = document.getElementById('choose_car') 
+
     change.innerHTML = "You're going to take the car in " + city + " for " + days + " days."
+    document.getElementById('numdays_lamb').innerText = days + " days"
+    document.getElementById('numdays_mb').innerText = days + " days"
+    document.getElementById('numdays_fer').innerText = days + " days"
+    document.getElementById('numdays_bmw').innerText = days + " days"
+
+    document.getElementById('price_lamb').innerText = '€' + days * 80
+    document.getElementById('price_mb').innerText = '€' + days * 55
+    document.getElementById('price_fer').innerText = '€' + days * 65
+    document.getElementById('price_bmw').innerText = '€' + days * 70
+}
+
+function bookCar() {
+    alert("Sorry, this page wasn't developed yet.")
 }

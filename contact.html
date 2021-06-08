@@ -22,15 +22,15 @@
     <script src="form.js"></script>
 </head>
 
-<body onload="changeTitle()">
+<body>
 
     <!--Header start-->
     <header>
         <nav class="navbar navbar-expand-sm">
-            <div class="container">
+            <div class="container nav-header">
 
                 <!--Logo-->
-                <i class="fas fa-car display-3 text-light ml-4"></i>
+                <i class="fas fa-car display-3 text-light ml-3"></i>
                 <!--End of logo-->
 
                 <!--Hamburguer menu-->
@@ -70,87 +70,21 @@
     <section id="rent">
         <div class="container">
             <div class="row home">
-                <div class="col-md-12 form form-options">
-                    <h5 id="choose_car" style="padding: auto;"></h5>
-                    <h5 style="margin-top: 20px;">Please choose the car of your choice.</h5>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Model</th>
-                                <th scope="col">Number of days</th>
-                                <th scope="col">Total Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">
-                                    <input class="form-check-input" type="radio" name="exampleRadios"
-                                        id="exampleRadios1" value="opcao1" style="margin: auto;" checked>
-                                </th>
-                                <td>Lamborghini Huracán Evo</td>
-                                <td id="numdays_lamb"></td>
-                                <td id="price_lamb"></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <input class="form-check-input" type="radio" name="exampleRadios"
-                                        id="exampleRadios2" value="opcao2" style="margin: auto;" checked>
-                                </th>
-                                <td>Mercedes-Benz Classe C</td>
-                                <td id="numdays_mb"></td>
-                                <td id="price_mb"></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <input class="form-check-input" type="radio" name="exampleRadios"
-                                        id="exampleRadios3" value="opcao3" style="margin: auto;" checked>
-                                </th>
-                                <td>Ferrari 458 Italia</td>
-                                <td id="numdays_fer"></td>
-                                <td id="price_fer"></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <input class="form-check-input" type="radio" name="exampleRadios"
-                                        id="exampleRadios4" value="opcao4" style="margin: auto;" checked>
-                                </th>
-                                <td>BMW iX3</td>
-                                <td id="numdays_bmw"></td>
-                                <td id="price_bmw"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="btn btn-outline-dark" type="button" onclick="bookCar()">Book now!</button>
+                <div class="col-md-12 form-home">
+                    <h5>This website was developed by Pedro.rockdev. Contact me: </h5>
+                    <hr>
+                    <div id="contacts">
+                        <h5><i class="fas fa-at"></i> pedro.rockdev@gmail.com</h5>
+                        <h5><i class="fab fa-github"></i><a href="https://github.com/pedrorockdev"> GitHub</a></h5>
+                        <h5><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/pedrohenrocha/"> LinkedIn</a></h5>
+                        <h5><i class="fab fa-whatsapp-square"></i> +351 912 127 391</h5>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
     <!--Start of form rental area-->
-
-    <section id="download-app">
-        <div class="container">
-            <div class="row">
-                <div class="col d-none d-md-block">
-                    <img src="../Case1-CarRental/images/download-app.png" alt="" style="height: 480px; margin: 0 auto">
-                </div>
-                <div class="col flex-container">
-                    <div id="download">
-                        <h1>Download our app</h1>
-                        <p>Our iOS and Android apps make it easier than ever to manage reservations on the go.</p>
-                        <a href=""><img src="../Case1-CarRental/images/playstore.png" alt="" style="height: 120px;"></a>
-                        <h1 id="follow">Follow us</h1>
-                        <ul id="social-medias">
-                            <li><a href=""><img src="images/facebook.png" alt=""></a></li>
-                            <li><a href=""><img src="images/twitter.png" alt=""></a></li>
-                            <li><a href=""><img src="images/instagram.png" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer>
         <div class="container">
@@ -186,7 +120,6 @@
             <div class="row signature" style="color: white; margin-top: 40px;">
                 Developed by &copy;pedro.rockdev
             </div>
-        </div>
         </div>
     </footer>
 

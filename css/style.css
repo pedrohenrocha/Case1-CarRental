@@ -217,4 +217,25 @@ footer .navbar-nav a:hover {
     .signature {
         margin-left: 5px;
     }
+
+    .form-options {
+        margin: 80px 20px;
+        max-width: 100%;
+    }
+
+    #email {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-home {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-home {
+        max-width: 80%;
+    }
 }

@@ -41,7 +41,7 @@ function changeTitle() {
 
     var change = document.getElementById('choose_car') 
 
-    change.innerHTML = "You're going to take the car in " + city + " for " + days + " days."
+    change.innerHTML = "You're going to rent the car in " + city + " for " + days + " days."
     document.getElementById('numdays_lamb').innerText = days + " days"
     document.getElementById('numdays_mb').innerText = days + " days"
     document.getElementById('numdays_fer').innerText = days + " days"
